@@ -1,0 +1,208 @@
+<?php namespace App\Database\Seeds;
+
+class MaintenancesPermissionSeeder extends \CodeIgniter\Database\Seeder
+{
+        public $table = 'permissions';
+
+        public function run()
+        {
+          $data = [
+            [
+              'function_name' => 'add penalty',
+              'function_description' => 'add penalty',
+              'slugs' => 'add-penalty',
+              'name_on_class' => 'add_penalty',
+              'page_title' => 'penalty',
+              'module_id' => '7',
+              'link_icon' => '',
+              'order' => '1',
+              'table_name' => 'penalties',
+              'func_action' => 'add',
+              'func_type' => 3,
+              'allowed_roles' => "[1]",
+              'status' => 'a',
+              'created_at' => date('Y-m-d H:i:s')
+            ],
+                [
+                  'function_name' => 'penalty',
+                  'function_description' => 'penalty',
+                  'slugs' => 'list-penalty',
+                  'name_on_class' => 'index',
+                  'page_title' => 'penalty',
+                  'module_id' => '7',
+                  'link_icon' => '<i class="far fa-circle"></i>',
+                  'order' => '2',
+                  'table_name' => 'penalties',
+                  'func_action' => 'link',
+                  'func_type' => 1,
+                  'allowed_roles' => "[1]",
+                  'status' => 'a',
+                  'created_at' => date('Y-m-d H:i:s')
+                ],
+                [
+                  'function_name' => 'edit penalty',
+                  'function_description' => 'edit penalty',
+                  'slugs' => 'edit-penalty',
+                  'name_on_class' => 'edit_penalty',
+                  'page_title' => 'edit penalty',
+                  'module_id' => '7',
+                  'link_icon' => '',
+                  'order' => '3',
+                  'table_name' => 'penalties',
+                  'func_action' => 'edit',
+                  'func_type' => 3,
+                  'allowed_roles' => "[1]",
+                  'status' => 'a',
+                  'created_at' => date('Y-m-d H:i:s')
+                ],
+                [
+                  'function_name' => 'delete penalty',
+                  'function_description' => 'delete penalty',
+                  'slugs' => 'delete-penalty',
+                  'name_on_class' => 'delete_penalty',
+                  'page_title' => 'delete penalty',
+                  'module_id' => '7',
+                  'link_icon' => '',
+                  'order' => '4',
+                  'table_name' => 'penalties',
+                  'func_action' => 'delete',
+                  'func_type' => 3,
+                  'allowed_roles' => "[1]",
+                  'status' => 'a',
+                  'created_at' => date('Y-m-d H:i:s')
+                ],
+            [
+              'function_name' => 'year & section',
+              'function_description' => 'year',
+              'slugs' => 'list-year',
+              'name_on_class' => 'index',
+              'page_title' => 'year & section',
+              'module_id' => '7',
+              'link_icon' => '<i class="far fa-circle"></i>',
+              'order' => '13',
+              'table_name' => 'years',
+              'func_action' => 'link',
+              'func_type' => 1,
+              'allowed_roles' => "[1]",
+              'status' => 'a',
+              'created_at' => date('Y-m-d H:i:s')
+            ],
+                [
+                  'function_name' => 'edit year',
+                  'function_description' => 'edit year',
+                  'slugs' => 'edit-year',
+                  'name_on_class' => 'edit_year',
+                  'page_title' => 'edit year',
+                  'module_id' => '7',
+                  'link_icon' => '',
+                  'order' => '14',
+                  'table_name' => 'years',
+                  'func_action' => 'edit',
+                  'func_type' => 3,
+                  'allowed_roles' => "[1]",
+                  'status' => 'a',
+                  'created_at' => date('Y-m-d H:i:s')
+                ],
+                [
+                  'function_name' => 'delete year',
+                  'function_description' => 'delete year',
+                  'slugs' => 'delete-year',
+                  'name_on_class' => 'delete_year',
+                  'page_title' => 'delete year',
+                  'module_id' => '7',
+                  'link_icon' => '',
+                  'order' => '15',
+                  'table_name' => 'years',
+                  'func_action' => 'delete',
+                  'func_type' => 3,
+                  'allowed_roles' => "[1]",
+                  'status' => 'a',
+                  'created_at' => date('Y-m-d H:i:s')
+                ],
+                [
+                  'function_name' => 'add year',
+                  'function_description' => 'add year',
+                  'slugs' => 'add-year',
+                  'name_on_class' => 'add_year',
+                  'page_title' => 'year',
+                  'module_id' => '7',
+                  'link_icon' => '',
+                  'order' => '16',
+                  'table_name' => 'years',
+                  'func_action' => 'add',
+                  'func_type' => 3,
+                  'allowed_roles' => "[1]",
+                  'status' => 'a',
+                  'created_at' => date('Y-m-d H:i:s')
+                ],
+            [
+              'function_name' => 'subject',
+              'function_description' => 'subject',
+              'slugs' => 'list-subject',
+              'name_on_class' => 'index',
+              'page_title' => 'subject',
+              'module_id' => '7',
+              'link_icon' => '<i class="far fa-circle"></i>',
+              'order' => '17',
+              'table_name' => 'subjects',
+              'func_action' => 'link',
+              'func_type' => 1,
+              'allowed_roles' => "[1]",
+              'status' => 'a',
+              'created_at' => date('Y-m-d H:i:s')
+            ],
+                [
+                  'function_name' => 'edit subject',
+                  'function_description' => 'edit subject',
+                  'slugs' => 'edit-subject',
+                  'name_on_class' => 'edit_subject',
+                  'page_title' => 'edit subject',
+                  'module_id' => '7',
+                  'link_icon' => '',
+                  'order' => '18',
+                  'table_name' => 'subjects',
+                  'func_action' => 'edit',
+                  'func_type' => 3,
+                  'allowed_roles' => "[1]",
+                  'status' => 'a',
+                  'created_at' => date('Y-m-d H:i:s')
+                ],
+                [
+                  'function_name' => 'delete subject',
+                  'function_description' => 'delete subject',
+                  'slugs' => 'delete-subject',
+                  'name_on_class' => 'delete_subject',
+                  'page_title' => 'delete subject',
+                  'module_id' => '7',
+                  'link_icon' => '',
+                  'order' => '19',
+                  'table_name' => 'subjects',
+                  'func_action' => 'delete',
+                  'func_type' => 3,
+                  'allowed_roles' => "[1]",
+                  'status' => 'a',
+                  'created_at' => date('Y-m-d H:i:s')
+                ],
+                [
+                  'function_name' => 'add subject',
+                  'function_description' => 'add subject',
+                  'slugs' => 'add-subject',
+                  'name_on_class' => 'add_subject',
+                  'page_title' => 'subject',
+                  'module_id' => '7',
+                  'link_icon' => '',
+                  'order' => '20',
+                  'table_name' => 'subjects',
+                  'func_action' => 'add',
+                  'func_type' => 3,
+                  'allowed_roles' => "[1]",
+                  'status' => 'a',
+                  'created_at' => date('Y-m-d H:i:s')
+                ],
+                ];
+                // print_r($data); die();
+                $db      = \Config\Database::connect();
+                $builder = $db->table($this->table);
+                $builder->insertBatch($data);
+        }
+}
